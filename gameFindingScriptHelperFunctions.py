@@ -14,13 +14,12 @@ def get_hour_minute(time):
     for i in range(len(time)):
       if time[i] == ":":
         index = i
-    hour = time[:index]
+    hour = int(time[:index])
     minute = time[index+1:]
     
-    return [hour, minute]
-
-
-def sanitize_user_time(users):
-    for user in users:
-       if user[1] not in []
-       
+    if minute != "00":
+       hour += 1
+       hour = hour%24
+       minute = "00"
+    
+    return str(hour)
