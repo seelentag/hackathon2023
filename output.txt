@@ -21,4 +21,3 @@ Group 19: Monday 18:00, ['snoopie#4567', 'goodnight#8945', 'sourpatchkids#4567',
 Group 20: Monday 18:00, ['jamesbond#0007', 'double007#4567']
 Group 21: Wednesday 16:00, ['Dos#4344', 'crazyguy#4344', 'jacksparrow#4344', 'hanschristianandersen#4344']
 Group 22: Wednesday 17:00, ['Tree#7878', 'redwoods#7878', 'thebookofgenesis#7878', 'sleepingbeauty#7878']
-Group 23: Wednesday 17:00, []

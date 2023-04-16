@@ -75,7 +75,7 @@ while not finished_cleaning:
       del time_groups[i]
       i -= 1
    i += 1
-   if i == len(time_groups)-1:
+   if i == len(time_groups):
       finished_cleaning = True
    
 
