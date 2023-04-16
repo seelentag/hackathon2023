@@ -3,18 +3,6 @@ import gameFindingScriptHelperFunctions as gf
 
 app = Flask(__name__)
 
-# @app.route('/')
-# def index():
-#     return render_template('index.html')
-
-# @app.route('/sort_users', methods=['POST'])
-# def upload_file():
-#     file = request.files['inputFile']
-#     filename = file.filename
-#     file.save(filename)
-#     result = sort_users_into_groups(filename)
-#     return result
-
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -44,7 +32,7 @@ def sort_users():
     groups = sort_users_into_groups(filename)
 
     # Return the groups as a response
-    return '<pre>' + groups + '</pre>' + '<a href="/">Back to party creation</a>'
+    return '<link href="static/style.css" rel="stylesheet" type="text/css" /> <pre>' + groups + '</pre>' + '<footer><a href="/">Back to party creation</a></footer>'
 
 def sort_users_into_groups(filename):
     # Poking through initial CSV file and cleaning the data for our purposes
@@ -86,6 +74,8 @@ def sort_users_into_groups(filename):
     groups_over_60 = gf.create_group_string(time_groups_over_60)
 
     groups = gf.concatenate_age_groups(groups_under_18, groups_under_30, groups_under_60, groups_over_60)
+
+    
 
     return str(groups)
 

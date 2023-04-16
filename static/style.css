@@ -9,15 +9,16 @@ body {
 
 /* Header */
 header {
-    background-color: #333;
+    background-color: rgb(105, 9, 9);
+    background-color: rgb(105, 9, 9);
+    border: 4px solid rgb(36, 25, 25);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(105, 9, 9);
     color: #fff;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
-}
-
-header h1 {
     margin: 0;
-    font-size: 48px;
+    font-size: 30px;
 }
 
 /* Form */
@@ -58,10 +59,11 @@ form input[type="submit"]:hover {
 
 /* Output */
 pre {
-    background-color: #fff;
-    border: 1px solid #ccc;
+    color: white;
+    background-color: rgb(105, 9, 9);
+    border: 4px solid rgb(36, 25, 25);
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgb(105, 9, 9);
     margin: 20px auto;
     max-width: 600px;
     padding: 20px;
@@ -70,8 +72,21 @@ pre {
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+    color: white;
+    background-color: rgb(105, 9, 9);
+    border: 4px solid rgb(36, 25, 25);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(105, 9, 9);
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    white-space: pre-wrap;
+}
+
+a {
+    color: white;
+}
+
+a:active {
+    color: lightblue;
 }
