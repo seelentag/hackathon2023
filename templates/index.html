@@ -3,11 +3,16 @@
    <head>
       <meta charset="utf-8">
       <title>TTRPG Game Finding Script</title>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
    </head>
    <body>
-      <h1>TTRPG Game Finding Script</h1>
+      <header>
+      <h1>TTRPG Party Creation Script</h1>
+      </header>
+
       <form action="/sort_users" method="POST" enctype="multipart/form-data">
-         <label for="csv_file">Upload CSV file:</label>
+         <label for="csv_file">Upload CSV file to create parties:</label>
          <input type="file" id="csv_file" name="csv_file" accept=".csv">
          <br><br>
          <input type="submit" value="Submit">

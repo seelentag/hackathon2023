@@ -44,7 +44,7 @@ def sort_users():
     groups = sort_users_into_groups(filename)
 
     # Return the groups as a response
-    return '<pre>' + groups + '</pre>' + '<a href="/">Back to login</a>'
+    return '<pre>' + groups + '</pre>' + '<a href="/">Back to party creation</a>'
 
 def sort_users_into_groups(filename):
     # Poking through initial CSV file and cleaning the data for our purposes
