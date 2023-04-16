@@ -18,11 +18,11 @@ def sort_users():
 
     # Check if the file is not empty
     if csv_file.filename == '':
-        return 'The uploaded file is empty.'
+        return '<h1>The uploaded file is empty.</h1>' + '<a href="/">Back to party creation tool</a>'
 
     # Check if the file is a CSV file
     if not csv_file.filename.endswith('.csv'):
-        return 'The uploaded file is not a CSV file.'
+        return '<h1>The uploaded file is not a CSV file.</h1>' + '<a href="/">Back to party creation tool</a>'
 
     # Save the file to disk
     filename = 'uploaded_file.csv'
@@ -67,7 +67,7 @@ def sort_users_into_groups(filename):
     time_groups_under_60 = gf.sort_users(users_over_30_under_60)
     time_groups_over_60 = gf.sort_users(users_over_60)
 
-    # Outputting a txt file with grouped users
+    # Outputting a string with grouped users
     groups_under_18 = gf.create_group_string(time_groups_under_18)
     groups_under_30 = gf.create_group_string(time_groups_under_30)
     groups_under_60 = gf.create_group_string(time_groups_under_60)

@@ -21,6 +21,10 @@ header {
     font-size: 30px;
 }
 
+header h2 {
+    font-size: 30px;
+}
+
 /* Form */
 form {
     background-color: #fff;
@@ -89,4 +93,12 @@ a {
 
 a:active {
     color: lightblue;
+}
+
+a:hover {
+    color: rgba(255, 223, 227, 0.932);
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    transition: background-color 0.2s ease-in-out;
 }
