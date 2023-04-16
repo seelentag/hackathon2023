@@ -23,3 +23,4 @@ def get_hour_minute(time):
        minute = "00"
     
     return str(hour)
+

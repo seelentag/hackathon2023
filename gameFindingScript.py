@@ -44,20 +44,33 @@ print(users)
 
 # Matching people based on their available times
 
-times = {}
+user_times = []
 
-# for user in users:
-#     if user in times:
-        
+for user in users:
+   user_times += [users[user]]
 
-    
-
-
+group_by_time = {}
+print(user_times)
 
 
-# Outputing a CSV file with grouped users
+for time in user_times:
+    if time[0] not in group_by_time:
+       group_by_time[time[0]] = [time[1]]
+    else:
+        group_by_time[time[0]] += [time[1]]
+
+print(group_by_time)
 
 
+
+
+# Outputing a txt file with grouped users
+
+# output = groups
+
+# f = open("output.txt", "w")
+# f.writelines(output)
+# f.close
 
 
 
