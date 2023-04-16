@@ -4,8 +4,16 @@
 
 # Written 4/15/23 and 4/16/23 for the Cal Poly Humboldt Hackathon
 
+class user:
+  def __init__(self, username, time):
+    self.username = username
+    self.time = time
 
-
+class time_group:
+  def __init__(self, time):
+    self.time = time
+    self.people = []
+    self.length = 0
 
 
 
@@ -23,4 +31,5 @@ def get_hour_minute(time):
        minute = "00"
     
     return str(hour)
+
 
